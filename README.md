@@ -15,7 +15,7 @@ A person-agnostic skill that helps anyone apply to many opportunities without re
 ## Install
 
 ```bash
-git clone https://github.com/<you>/applications-skill ~/.claude/skills/applications
+git clone https://github.com/GrupAP/applications-skill ~/.claude/skills/applications
 ```
 
 Requirements: Claude Code with the Playwright MCP; `python3`; Chrome/Chromium (PDF rendering); poppler-utils (`pdftotext`, `pdfinfo`, `pdfdetach`, `pdfunite`).
