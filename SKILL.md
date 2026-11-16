@@ -105,5 +105,5 @@ Record dates of online assessments (often 7 days), cool-down periods, decision d
 - `references/documents.md` – CV, transcripts, letters, PDFs
 - `references/writing.md` – voice and anti-AI-slop checklist
 - `references/gotchas.md` – failure modes and fixes
-- `scripts/gh_inspect.js`, `scripts/generic_inspect.js`, `scripts/gh_fill.template.js` – Playwright helpers
+- `scripts/gh_inspect.js`, `scripts/generic_inspect.js`, `scripts/gh_fill.template.js`, `scripts/gh_submit.js` – Playwright helpers (gh_submit only after explicit approval)
 - `scripts/transcript_translation.py`, `scripts/md_to_pdf.py`, `scripts/europass_xml.py`, `scripts/pdf_text_diff.sh`
