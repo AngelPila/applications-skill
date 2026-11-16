@@ -1,0 +1,131 @@
+# ============================================================
+#  APPLICANT PROFILE – fill once; every application reads from here
+# ============================================================
+# - Leave unknown fields empty (""). The assistant asks only when a form needs them.
+# - Never store passwords here.
+# - Dates: YYYY-MM or YYYY-MM-DD. Mark estimates with a comment.
+# ============================================================
+
+personal:
+  given_names: ""
+  family_names: ""
+  preferred_name: ""
+  pronouns: ""                 # e.g. "she/her", "he/him", "they/them"; leave empty to answer "prefer not to say"
+  date_of_birth: ""
+  nationality: ""              # citizenship(s), comma-separated
+  country_of_residence: ""
+  city: ""
+  email: ""
+  phone: ""                    # with country code
+  national_id: ""              # only typed into official forms that require it
+  passport:
+    number: ""
+    expiry: ""
+  address: { street: "", city: "", region: "", postal_code: "", country: "" }
+  links:
+    linkedin: ""
+    github: ""
+    portfolio: ""
+    scholar_or_orcid: ""
+
+work_authorization:            # used to answer "authorized to work?" and "need sponsorship?"
+  countries_with_work_rights: []   # e.g. ["Spain"]; citizen or permanent resident only
+  notes: ""                        # e.g. "student visa", "EAD until 2027-06"
+
+demographics:                  # optional; empty = "prefer not to say"
+  gender: ""
+  ethnicity: ""
+  disability: ""
+  veteran: ""
+
+academic:
+  university: ""
+  university_short: ""         # acronym used in dropdown searches
+  faculty: ""
+  program: ""                  # in the language of applications
+  program_original: ""         # as written on the transcript
+  degree_level: ""             # bachelor / master / ...
+  start: ""                    # YYYY-MM
+  expected_graduation: ""      # YYYY-MM (mark if estimated)
+  year_of_study: ""            # e.g. 3
+  gpa: ""                      # exactly as on the transcript
+  gpa_scale: ""                # e.g. "10", "4.0", "20", "UK classification"
+  gpa_scale_notes: ""          # grade bands, minimum passing grade
+  progress_percent: ""
+  relevant_courses: []         # "Course (grade)"
+  high_school: { name: "", city: "", graduation_year: "" }
+  academic_calendar: ""        # e.g. "term 1: May–Sep, term 2: Oct–Feb" – used to detect clashes
+
+languages:                     # [{language, level, certificate}]
+  - { language: "", level: "", certificate: "" }
+
+experience:                    # newest first
+  - title: ""
+    organization: ""
+    location: ""
+    start: ""
+    end: ""                    # "present" if ongoing
+    hours_per_week: ""
+    supervisor: ""             # only if forms ask
+    description: ""
+
+research:
+  - title: ""
+    role: ""
+    advisor: ""
+    status: ""                 # in progress / submitted / published
+    description: ""
+    concrete_result: ""        # one sentence with a number, or empty
+
+publications: []
+
+projects:
+  - { name: "", date: "", link: "", summary: "" }
+
+awards:                        # "Title – Organizer (YYYY or YYYY-MM)"
+  - ""
+
+leadership:
+  - { role: "", organization_or_event: "", dates: "", description: "", impact_numbers: "" }
+
+skills:
+  programming: []
+  ml_data: []
+  tools: []
+  soft: []
+
+referees:                      # contact data only; letters are requested by the applicant
+  - { name: "", title: "", institution: "", email: "", relationship: "", agreed: false }
+
+availability:
+  summer_from: ""
+  summer_to: ""
+  max_weeks: ""
+  remote_ok: true
+  can_relocate: true
+  hours_per_week_during_term: ""
+
+funding:
+  needs_full_funding: ""
+
+documents:                     # paths under the workspace upload/ folder
+  cv_en: ""
+  cv_other_language: ""
+  transcript_original: ""
+  transcript_translation: ""
+  enrollment_certificate: ""
+  language_certificate: ""
+  passport_scan: ""
+  photo: ""
+
+reusable_answers:              # raw notes in the applicant's own words; adapted per form
+  why_research: ""
+  research_interests: ""
+  career_goals: ""
+  biggest_challenge: ""
+  teamwork_story: ""
+  not_on_cv: ""
+  background_context: ""       # first-generation, working while studying, etc. – only if the applicant wants it used
+
+portal_accounts:               # usernames/emails only, NEVER passwords
+  {}
